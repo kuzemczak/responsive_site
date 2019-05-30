@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+
+<!-- Dane o stronie -->
+<head>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Test refleksu</title>
+</head>
+
+<!-- Wygląd strony -->
+<body>
+    <!-- Nagłówek strony -->
+    <header>
+        Sprawdź swój refleks!
+    </header>
+
+    <section>
+        <!-- Kontener z opisem -->
+        <div id="description">
+            Zagraj 5 razy i sprawdź jak szybki jesteś!
+        </div>
+
+        <!-- Kontener z przyciskiem -->
+        <div style="width: 50%; float: left">
+            <p>
+                <img src="Images/buttonRed.png" id="button" alt="Timing button" onclick="StartIdle()"/>
+            </p>
+        </div>
+
+        <!-- Tabela z czasami -->
+        <div style="width: 50%; float: right">
+            <h2>Twój czas:</h2>
+            <!-- TUTAJ TABELA -->
+            <table id="timesTable">
+               
+            </table>
+        </div>
+    </section>
+
+    <!--Podłączenie JS-->
+    <script src="script.js"></script>
+    <script>ResetTimes()</script>
+    <script>UpdateTable(0)</script>
+
+</body>
+</html>
