@@ -3,6 +3,10 @@
 
 <!-- Dane o stronie -->
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="responsive_site.css">
+    <link rel="stylesheet" href="topnav.css">
+    <script src="topnav_script.js"></script>
     <meta charset="utf-8" />
     <link href="style.css" rel="stylesheet" type="text/css" />
     <title>Test refleksu</title>
@@ -24,7 +28,7 @@
         <!-- Kontener z przyciskiem -->
         <div style="width: 50%; float: left">
             <p>
-                <img src="Images/buttonRed.png" id="button" alt="Timing button" onclick="StartIdle()"/>
+                <img src="Images/buttonRed.png" id="button" alt="Timing button" onclick="StartIdle()" />
             </p>
         </div>
 
@@ -32,9 +36,7 @@
         <div style="width: 50%; float: right">
             <h2>Twój czas:</h2>
             <!-- TUTAJ TABELA -->
-            <table id="timesTable">
-               
-            </table>
+            <table id="timesTable"></table>
         </div>
     </section>
 
@@ -42,6 +44,32 @@
     <script src="script.js"></script>
     <script>ResetTimes()</script>
     <script>UpdateTable(0)</script>
-
+    <div style="height: 100vh;" class="backg">
+        <img src="arrow.png" id="arrow">
+    </div>
+    <div style="height: 500px;" class="backg">
+        <div class="topnav" id="myTopnav">
+            <a href="responsive_site.html">Strona główna</a>
+            <a href="policja.html">Policja</a>
+            <a href="szkolnictwo.html" class="active">Szkolnictwo</a>
+            <a href="rzad.html">Rząd</a>
+            <a href="index.html">Test polaka</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Dropdown
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="#">Link 1</a>
+                    <a href="#">Link 2</a>
+                    <a href="#">Link 3</a>
+                </div>
+            </div>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div class="col-12 col-s-12 post">
+            <h1>Prawdziwy polak to sprawny polak</h1>
+            <p>Dla obywateli Polskich z wynikiem poniżej 200ms, gwarantowane 750+ na pierwsze dziecko. Trzeba wspierać lepszy sort! </p>
+    </div>
 </body>
 </html>
