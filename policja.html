@@ -3,33 +3,45 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="responsive_site.css">
+<link rel="stylesheet" href="topnav.css">
+<script src="topnav_script.js"></script>
 </head>
 <body>
-
-<div class="col-12 col-s-12">
-<img src="https://i.kym-cdn.com/entries/icons/original/000/023/159/osvk2a0b712z.png" width="460" height="345">
+<div style="background-image: url(&quot;https://i.imgflip.com/1w0wah.jpg&quot;);" class="parallax">
+    <div style="height: 100vh;" class="backg">
+            <img src="arrow.png" id="arrow"></div>
+    <div style="height: 500px;"class="backg">
+        <div class="topnav" id="myTopnav">
+            <a href="responsive_site.html">Strona główna</a>
+            <a href="policja.html" class="active">Policja</a>
+            <a href="szkolnictwo.html">Szkolnictwo</a>
+            <a href="rzad.html">Rząd</a>
+            <div class="dropdown">
+                <button class="dropbtn">Dropdown 
+                <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
+            </div> 
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <div class="col-9 col-s-9 post">
+            <h1>Policja jest piękna też</h1>
+            <p>Ach! wy nie pamiętacie tego Państwo młodzi!
+                Jak wśród naszej burzliwej szlachty samowładnej,
+                Zbrojnej, nie trzeba było policyi żadnej:
+                Dopóki wiara kwitła, szanowano prawa,
+                Była wolność z porządkiem i z dostatkiem sława!
+                W innych krajach, jak słyszę, trzyma urząd drabów,
+                Policyjantów różnych, żandarmów, konstabów:
+                Ale jeśli miecz tylko bezpieczeństwa strzeże,
+                Żeby w tych krajach była wolność – nie uwierzę.
+            </p>
+    </div>
 </div>
-<div class="col-3 col-s-3 menu">
-    <ul>
-        <a href="responsive_site.html"><li>Strona Główna</li></a>
-        <a href="policja.html"><li>Policja</li></a>
-        <a href="https://i.kym-cdn.com/entries/icons/original/000/018/259/55181940.jpg"><li>Szkolnictwo</li></a>
-        <a href="gf-xcKm-RMV1-UNZ6_jaroslaw-kaczynski-664x442-nocrop.jpg"><li>Rząd</li></a>
-        <a href="https://i.kym-cdn.com/entries/icons/original/000/026/111/4917038d8bbd7fe362bed691690c7da4.jpg"><li>Skarbówka</li></a>
-    </ul>
-</div>
-<div class="col-9 col-s-9 post">
-    <h1>Policja jest piękna też</h1>
-    <p>Ach! wy nie pamiętacie tego Państwo młodzi!
-        Jak wśród naszej burzliwej szlachty samowładnej,
-        Zbrojnej, nie trzeba było policyi żadnej:
-        Dopóki wiara kwitła, szanowano prawa,
-        Była wolność z porządkiem i z dostatkiem sława!
-        W innych krajach, jak słyszę, trzyma urząd drabów,
-        Policyjantów różnych, żandarmów, konstabów:
-        Ale jeśli miecz tylko bezpieczeństwa strzeże,
-        Żeby w tych krajach była wolność – nie uwierzę.
-    </p>
 </div>
 
 </body>

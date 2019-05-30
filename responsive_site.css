@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
 }
 
@@ -99,11 +99,15 @@ a:link {
 .menu li {
     padding: 8px;
     margin-bottom: 7px;
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
     border-style: hidden hidden hidden solid;
     border-color: red;
     color: #000000;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li.current {
+    border-style: hidden solid hidden solid;
 }
 
 .menu li:hover {
@@ -111,27 +115,50 @@ a:link {
 }  
 
 .post h1 {
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
     border-style: solid dotted hidden dotted;
     border-width: 3px 1px 1px 1px;
     border-color: red lightgray lightgray lightgray;
-    margin-bottom: -20px;
+    margin-bottom: -16px;
     padding: 8px;
 }
 
 .post p {
-    background-color: white;
+    background-color: rgba(255,255,255,0.9);
+    text-align: justify;
     border-style: hidden dotted dotted dotted;
     border-width: 1px;
     border-color: lightgray;
-    margin-bottom: -20px;
     padding: 8px;
 }
+
+.backg {
+    width: 100%;
+    background-color: rgba(255,255,255,0.5);
+}
+
+.parallax { 
+    /* The image used */
+    
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 
 img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 60%;
     height: auto;
+}
+
+#arrow {
+    width: 20vh;
+    padding-top: 80vh;
 }
